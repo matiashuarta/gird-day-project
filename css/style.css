@@ -1,0 +1,717 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'CAMistery';
+    src: url("../fonts/CAMysteryGirl-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url("../fonts/Poppins/Poppins-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url("../fonts/Poppins/Poppins-Bold.ttf") format('truetype');
+}
+
+body {
+    background-color: black;
+}
+
+.gridPadreIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "portada portada portada"
+        "musica musica musica"
+        "videos videos videos"
+        "footer footer footer";
+}
+
+/* nav */
+.nav {
+    grid-area: nav;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    background-color: black;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    padding: 40px;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+
+.menu li {
+    list-style: none;
+    padding: 15px 15px 25px 15px;
+}
+
+.menu a {
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+    font-family: "CAMistery";
+    font-size: 30px;
+    background-color: transparent;
+
+}
+
+.menu li:hover,
+main a:hover {
+    background-color: rgb(143, 25, 25);
+}
+
+
+/* header */
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    background-color: black;
+}
+
+.header div {
+    width: 50%;
+}
+
+.divlogo {
+    display: flex;
+    justify-content: center;
+}
+
+.divlogo img {
+    margin-right: 12px;
+    margin-top: 8px;
+}
+
+.redesTop {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    margin-top: 8px;
+}
+
+.redesTop li {
+    margin: 5px;
+    list-style: none;
+}
+
+/* section1 index */
+.portada {
+    grid-area: portada;
+    text-align: center;
+    overflow: hidden;
+}
+
+.greenRed {
+    width: 100vw;
+    transition: transform 0.5s linear;
+}
+
+.greenRed:hover {
+    transform: scale(1.1);
+}
+
+/* section2 index */
+.musica {
+    grid-area: musica;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+    padding: 30px 0px;
+}
+
+.greenMusica {
+    width: 45vw;
+    max-width: 480px;
+}
+
+.musicaListen {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 50%;
+}
+
+.musicaListen p {
+    text-align: center;
+    color: white;
+    font-family: "CAMistery";
+    font-size: 50px;
+}
+
+.musicaBoton {
+    background-color: rgb(143, 25, 25);
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "PoppinsRegular";
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.musicaBoton:hover {
+    background-color: rgb(204, 44, 44);
+}
+
+/* section3 index */
+.videos {
+    grid-area: videos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+    padding: 30px 0px;
+    color: white;
+    font-family: "CAMistery";
+    font-size: 50px;
+}
+
+.videomp4 {
+    align-items: center;
+    margin-top: 50px;
+    width: 90vw;
+    max-width: 860px;
+}
+
+/* footer */
+.footer {
+    grid-area: footer;
+}
+
+.divfooter {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.divfooter div {
+    padding: 20px;
+}
+
+.divfooter div a:not(ul li a) {
+    color: white;
+    font-family: "PoppinsRegular";
+    border-bottom: 2px solid rgb(151, 37, 37);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footerRedes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    /* width: 300px; */
+}
+
+.footerRedes li {
+    list-style: none;
+    padding: 0px 5px;
+}
+
+/* Tours */
+.gridPadreTours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "tours tours tours"
+        "imageTours imageTours imageTours"
+        "footer footer footer";
+}
+
+.tours {
+    grid-area: tours;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.tours p {
+    font-family: "PoppinsRegular";
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#customers {
+    font-family: "PoppinsRegular";
+    border-collapse: collapse;
+    border-color: white;
+    width: 70%;
+    color: white;
+    background-color: black;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 18px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: black;
+}
+
+#customers tr:hover {
+    background-color: #9E1B2F;
+}
+
+#customers th {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-color: white;
+    text-align: left;
+    background-color: #9E1B2F;
+    color: white;
+}
+
+.imageTours {
+    grid-area: imageTours;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Contact */
+
+.gridPadreContact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "imageContact imageContact imageContact"
+        "contact contact contact"
+        "footer footer footer";
+}
+
+.contact {
+    grid-area: contact;
+    margin: 40px auto;
+}
+
+.form {
+    width: 300px;
+    font-family: "PoppinsBold";
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "PoppinsLight";
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(151, 37, 37);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "PoppinsRegular";
+}
+
+input[type=submit]:hover {
+    background-color: #9E1B2F;
+    font-family: "PoppinsBold";
+}
+
+/* About */
+
+.gridPadreAbout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "about about about"
+        "billie mike tre"
+        "footer footer footer";
+}
+
+.about {
+    grid-area: about;
+}
+
+.about div {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about h1,
+.privacyandpolicy h1,
+.termsandPolicy h1  {
+    color: #9E1B2F;
+    font-size: 40px;
+    text-align: center;
+    font-family: "PoppinsLight";
+    margin-top: 20px;
+}
+
+.about p {
+    color: white;
+    font-size: 16 px;
+    text-align: center;
+    font-family: "PoppinsBold";
+    margin-top: 20px;
+}
+
+/* .privacyandpolicy h1,
+.termsandPolicy h1 {
+    font-size: 42px;
+    color: rgb(151, 37, 37);
+    padding: 20px;
+    text-align: center;
+    font-family: "PoppinsBold";
+    margin-bottom: 10px;
+    margin-top: 10px;
+} */
+
+.aboutMembers {
+    font-family: "PoppinsRegular";
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.aboutMembers h2,
+h3 {
+    color: white;
+}
+
+.aboutMembers p {
+    color: #d1cccc;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.billie {
+    grid-area: billie;
+}
+
+.tre {
+    grid-area: tre;
+}
+
+.mike {
+    grid-area: mike;
+}
+
+.gridPadreTerms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "termsandPolicy termsandPolicy termsandPolicy"
+        "footer footer footer";
+}
+
+.termsandPolicy {
+    grid-area: termsandPolicy;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 350px;
+}
+
+.termsandPolicy p {
+    font-family: "PoppinsRegular";
+    font-size: 20px;
+    color: white;
+    align-content: center;
+}
+
+.termsandPolicy img {
+    width: 700px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.gridPrivacyPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "privacyandpolicy privacyandpolicy privacyandpolicy"
+        "footer footer footer";
+}
+
+.privacyandpolicy {
+    grid-area: privacyandpolicy;
+    font-size: 20px;
+    font-family: "PoppinsRegular";
+    color: white;
+    text-align: center;
+    padding: 30px 350px;
+}
+
+.privacyandpolicy h1,
+h2,
+.privacyandpolicy h3 {
+    color: #9E1B2F;
+}
+
+
+
+/* RESPONSIVE SECTION */
+
+@media only screen and (max-width: 1080px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.82);
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .menu a {
+        font-size: 36px;
+    }
+
+    .menu li {
+        padding: 10px 10px 15px 10px;
+    }
+
+    .menu a:after{
+        background: rgb(143, 25, 25);
+    }
+
+    #check:checked~.menu {
+        left: 0;
+    }
+
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    .musica {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-bottom: none;
+        padding: 20px 0px;
+    }
+
+    .greenMusica {
+        width: 65vw;
+        max-width: 480px;
+    }
+
+    .musicaListen {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 155px;
+        width: 50%;
+    }
+
+    .musicaListen p {
+        text-align: center;
+        color: white;
+        font-family: "CAMistery";
+        font-size: 25px;
+    }
+
+    .musicaBoton {
+        background-color: rgb(143, 25, 25);
+        border-radius: 25px;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        font-family: "PoppinsRegular";
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 75px;
+    }
+
+    .videos {
+        font-size: 25px;
+    }
+
+    .videomp4 {
+        margin-top: 20px;
+        width: 75vw;
+    }
+
+    .divfooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divfooter div {
+        padding: 10px;
+    }
+
+    .divfooter div a:not(ul li a) {
+        font-size: 12px;
+    }
+
+    .redesTop {
+        display: none;
+    }
+
+    .imageTours img {
+        width: 300px;
+
+    }
+
+    .tours p {
+        font-family: "PoppinsRegular";
+        font-size: 30px;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    #customers {
+        font-family: "PoppinsRegular";
+        border-collapse: collapse;
+        border-color: white;
+        width: 70%;
+        color: white;
+        background-color: black;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .gridPadreAbout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "nav header header"
+            "about about about"
+            "billie billie billie"
+            "mike mike mike"
+            "tre tre tre"
+            "footer footer footer";
+    }
+
+    .aboutMembers {
+        font-family: "PoppinsRegular";
+        text-align: center;
+        margin-top: 10px;
+        padding: 25px;
+    }
+
+.termsandPolicy{
+    padding: 30px 35px;
+}
+
+.termsandPolicy p, .privacyandpolicy p {
+    font-family: "PoppinsRegular";
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.termsandPolicy img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.privacyandpolicy {
+    grid-area: privacyandpolicy;
+    font-size: 12px;
+    font-family: "PoppinsRegular";
+    color: white;
+    text-align: center;
+    padding: 30px 35px;
+}
+
+.privacyandpolicy img{
+    width: 100%;
+}
+
+.privacyandpolicy h2 {
+    font-size: 20px;
+}
+
+.privacyandpolicy h3 {
+    font-size: 18px;
+}
+
+}
