@@ -115,7 +115,7 @@ main a:hover {
 .redesTop {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: right;
+    justify-content: flex-end;
     margin-top: 8px;
 }
 
