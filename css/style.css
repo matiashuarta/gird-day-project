@@ -413,17 +413,6 @@ input[type=submit]:hover {
     margin-top: 20px;
 }
 
-/* .privacyandpolicy h1,
-.termsandPolicy h1 {
-    font-size: 42px;
-    color: rgb(151, 37, 37);
-    padding: 20px;
-    text-align: center;
-    font-family: "PoppinsBold";
-    margin-bottom: 10px;
-    margin-top: 10px;
-} */
-
 .aboutMembers {
     font-family: "PoppinsRegular";
     text-align: center;
@@ -514,8 +503,6 @@ h2,
     color: #9E1B2F;
 }
 
-
-
 /* RESPONSIVE SECTION */
 
 @media only screen and (max-width: 1080px) {
@@ -530,7 +517,8 @@ h2,
         width: 100vw;
         height: 100vh;
         background: rgba(0, 0, 0, 0.82);
-        left: -100%;
+        /* left: -100%; */
+        transform: translate(-100%);
         text-align: center;
         transition: all .5s;
     }
@@ -548,7 +536,8 @@ h2,
     }
 
     #check:checked~.menu {
-        left: 0;
+        /* left: 0; */
+        transform: translate(0);
     }
 
     .header {
