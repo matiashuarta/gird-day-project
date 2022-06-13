@@ -50,10 +50,7 @@
                 </nav>
             </div>
         </header>
-        <!-- <section class="imageContact">
-            <img src="./img/imageContact.jpeg" alt="Green Day Contact us">
-        </section> -->
-        <section class="contact">
+        <section class="contact fir">
             <form class="form" action="">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name">
@@ -102,6 +99,12 @@
             </div>
         </footer>
     </div>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
+    <script src="./js/animations.js"></script>
 </body>
 
 </html>

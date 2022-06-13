@@ -50,7 +50,7 @@
                 </nav>
             </div>
         </header>
-        <section class="tours">
+        <section class="tours fib">
             <p>Upcoming Dates</p>
             <table id="customers">
                 <tr>
@@ -110,8 +110,9 @@
                 </tr>
             </table>
         </section>
-        <section class="imageTours">
-            <img src="https://static.wixstatic.com/media/529792_3f0796ee2e044e578f87c09232e67d2b~mv2.png" alt="Tours Green Day">
+        <section class="imageTours reveal fade-left">
+            <img src="https://static.wixstatic.com/media/529792_3f0796ee2e044e578f87c09232e67d2b~mv2.png"
+                alt="Tours Green Day">
         </section>
         <footer class="footer">
             <div class="divfooter">
@@ -138,6 +139,12 @@
             </div>
         </footer>
     </div>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </script>
+    <script src="./js/animations.js"></script>
 </body>
 
 </html>
