@@ -12,4 +12,11 @@ function reveal() {
     }
   }
 
-  window.addEventListener("scroll", reveal);
+  if(window.innerWidth > 1080){
+    window.addEventListener("scroll", reveal);
+  }else{
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        reveals[i].classList.add("active");
+      }
+  }

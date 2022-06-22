@@ -459,7 +459,6 @@ body {
   margin-top: 50px;
 }
 
-
 .gridPrivacyPadre {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -836,7 +835,7 @@ h2,
       transform: translate(-100%);
       text-align: center;
       transition: all .5s;
-    }
+         }
 
     .menu a {
       font-size: 36px;
