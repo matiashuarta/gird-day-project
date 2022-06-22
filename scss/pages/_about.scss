@@ -1,0 +1,63 @@
+.gridPadreAbout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "about about about"
+        "billie mike tre"
+        "footer footer footer";
+}
+
+.about {
+    grid-area: about;
+    div {
+        width: 70%;
+        margin: 0 auto;
+    }
+    h1{
+        color: #9E1B2F;
+        font-size: 40px;
+        text-align: center;
+        font-family: "PoppinsLight";
+        margin-top: 20px;
+    }
+    p{
+        color: white;
+        font-size: 16 px;
+        text-align: center;
+        font-family: "PoppinsBold";
+        margin-top: 20px;
+    }
+}
+
+.aboutMembers {
+    font-family: "PoppinsRegular";
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+}
+
+.aboutMembers h2,
+h3 {
+    color: white;
+}
+
+.aboutMembers p {
+    color: #d1cccc;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.billie {
+    grid-area: billie;
+}
+
+.tre {
+    grid-area: tre;
+}
+
+.mike {
+    grid-area: mike;
+}

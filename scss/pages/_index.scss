@@ -1,0 +1,95 @@
+.gridPadreIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "portada portada portada"
+        "musica musica musica"
+        "videos videos videos"
+        "footer footer footer"
+}
+
+.portada {
+    grid-area: portada;
+    text-align: center;
+    overflow: hidden;
+
+    &__greenRed {
+        width: 100vw;
+        transition: transform 0.5s linear;
+    }
+}
+
+.musica {
+    grid-area: musica;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+    padding: 30px 0px;
+
+    &__greenMusica {
+        width: 45vw;
+        max-width: 480px;
+    }
+
+    &__musicaListen {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 300px;
+        width: 50%;
+
+        p {
+            text-align: center;
+            color: white;
+            font-family: "CAMistery";
+            font-size: 50px;
+        }
+    }
+
+    &__musicaBoton {
+        background-color: rgb(143, 25, 25);
+        border-radius: 25px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        font-family: "PoppinsRegular";
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 150px;
+    }
+
+    &__musicaBoton:hover {
+        background-color: rgb(204, 44, 44);
+    }
+}
+
+.videos {
+    grid-area: videos;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 15px;
+    border-top: none;
+    border-bottom: none;
+    padding: 30px 0px;
+    color: white;
+    font-family: "CAMistery";
+    font-size: 50px;
+
+    &__videomp4 {
+        align-items: center;
+        margin-top: 50px;
+        width: 90vw;
+        max-width: 860px;
+    }
+}
