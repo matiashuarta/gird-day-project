@@ -696,6 +696,29 @@ h2,
 
   #check:checked~.menu {
     /* left: 0; */
+    transform: translate(0);
+  }
+
+  .header {
+    flex-direction: row-reverse;
+  }
+
+  .musica {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: none;
+    border-bottom: none;
+    padding: 20px 0px;
+  }
+
+  .greenMusica {
+    width: 65vw;
+    max-width: 480px;
+  }
+
+  .musicaListen {
+    display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-evenly;
