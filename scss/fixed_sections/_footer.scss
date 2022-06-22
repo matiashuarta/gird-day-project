@@ -1,0 +1,31 @@
+.footer{
+    grid-area: footer;
+    &__divfooter{
+        display: flex;
+        justify-content: space-evenly;
+        div{
+            padding: 20px;
+            a {
+                color: white;
+                font-family: "PoppinsRegular";
+                border-bottom: 2px solid rgb(151, 37, 37);
+                text-decoration: none;
+                font-size: 15px;
+            }
+        }
+    }
+    &__footerRedes{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        li {
+            list-style: none;
+            padding: 0px 5px;
+            a{
+                border-bottom: none;
+            }
+        }
+    }
+}

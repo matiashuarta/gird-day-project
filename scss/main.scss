@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import './fixed_sections/nav';
+@import './fixed_sections/header';
+@import './fixed_sections/footer';
+@import './pages/index';
+@import './pages/tours';
+@import './pages/contact';
+@import './pages/about';
+@import './pages/privacy';
+@import './pages/terms';
+
+@font-face {
+    font-family: 'CAMistery';
+    src: url("../fonts/CAMysteryGirl-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsLight';
+    src: url("../fonts/Poppins/Poppins-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url("../fonts/Poppins/Poppins-Bold.ttf") format('truetype');
+}
+
+body {
+    background-color: black;
+}
+
+// Possible Mixin
+// // .about h1,
+// // .privacyandpolicy h1,
+// // .termsandPolicy h1  {
+// //     color: #9E1B2F;
+// //     font-size: 40px;
+// //     text-align: center;
+// //     font-family: "PoppinsLight";
+// //     margin-top: 20px;
+// // }
+
+// .aboutMembers {
+//     font-family: "PoppinsRegular";
+//     text-align: center;
+//     margin-top: 50px;
+//     padding: 25px;
+// }
+
+// .aboutMembers h2,
+// h3 {
+//     color: white;
+// }
+
+// .aboutMembers p {
+//     color: #d1cccc;
+//     font-size: 14px;
+//     margin-top: 10px;
+// }
+
+.gridPadreTerms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "termsandPolicy termsandPolicy termsandPolicy"
+        "footer footer footer";
+}
+
+.termsandPolicy {
+    grid-area: termsandPolicy;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 350px;
+}
+
+.termsandPolicy p {
+    font-family: "PoppinsRegular";
+    font-size: 20px;
+    color: white;
+    align-content: center;
+}
+
+.termsandPolicy img {
+    width: 700px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.gridPrivacyPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "privacyandpolicy privacyandpolicy privacyandpolicy"
+        "footer footer footer";
+}
+
+.privacyandpolicy {
+    grid-area: privacyandpolicy;
+    font-size: 20px;
+    font-family: "PoppinsRegular";
+    color: white;
+    text-align: center;
+    padding: 30px 350px;
+}
+
+.privacyandpolicy h1,
+h2,
+.privacyandpolicy h3 {
+    color: #9E1B2F;
+}
+
+/* Animaciones */
+
+.zoom-in-out-box {
+    animation: zoom-in-zoom-out 1s ease;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .fir {
+     animation: fadeInRight 1s ease-in-out;
+  }
+ 
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fib {
+    animation: fadeInBottom 1s ease-in-out;
+ }
+
+ @keyframes fadeInBottom {
+   from {
+     opacity: 0;
+     transform: translateY(-300px);
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+ .fil {
+    animation: fadeInLeft 1s ease-in-out;
+ }
+
+ @keyframes fadeInLeft {
+   from {
+     opacity: 0;
+     transform: translateX(300px);
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+ .fit {
+    animation: fadeInTop 1s ease-in-out;
+ }
+
+ @keyframes fadeInTop {
+   from {
+     opacity: 0;
+     transform: translateY(300px);
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+ .appear {
+    animation: appear 3s ease-in-out;
+ }
+
+ @keyframes appear {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+
+/* Responsive Section */
+
+@media only screen and (max-width: 1080px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.82);
+        transform: translate(-100%);
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .menu a {
+        font-size: 36px;
+    }
+
+    .menu li {
+        padding: 10px 10px 15px 10px;
+    }
+
+    .menu a:after{
+        background: rgb(143, 25, 25);
+    }
+
+    #check:checked~.menu {
+        transform: translate(0);
+    }
+
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    .musica {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-bottom: none;
+        padding: 20px 0px;
+    }
+
+    .greenMusica {
+        width: 65vw;
+        max-width: 480px;
+    }
+
+    .musicaListen {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 155px;
+        width: 50%;
+    }
+
+    .musicaListen p {
+        text-align: center;
+        color: white;
+        font-family: "CAMistery";
+        font-size: 25px;
+    }
+
+    .musicaBoton {
+        background-color: rgb(143, 25, 25);
+        border-radius: 25px;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        font-family: "PoppinsRegular";
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 75px;
+    }
+
+    .videos {
+        font-size: 25px;
+    }
+
+    .videomp4 {
+        margin-top: 20px;
+        width: 75vw;
+    }
+
+    .divfooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divfooter div {
+        padding: 10px;
+    }
+
+    .divfooter div a:not(ul li a) {
+        font-size: 12px;
+    }
+
+    .redesTop {
+        display: none;
+    }
+
+    .imageTours img {
+        width: 300px;
+
+    }
+
+    .tours p {
+        font-family: "PoppinsRegular";
+        font-size: 30px;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    #customers {
+        font-family: "PoppinsRegular";
+        border-collapse: collapse;
+        border-color: white;
+        width: 70%;
+        color: white;
+        background-color: black;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .gridPadreAbout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "nav header header"
+            "about about about"
+            "billie billie billie"
+            "mike mike mike"
+            "tre tre tre"
+            "footer footer footer";
+    }
+
+    .aboutMembers {
+        font-family: "PoppinsRegular";
+        text-align: center;
+        margin-top: 10px;
+        padding: 25px;
+    }
+
+.termsandPolicy{
+    padding: 30px 35px;
+}
+
+.termsandPolicy p, .privacyandpolicy p {
+    font-family: "PoppinsRegular";
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.termsandPolicy img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.privacyandpolicy {
+    grid-area: privacyandpolicy;
+    font-size: 12px;
+    font-family: "PoppinsRegular";
+    color: white;
+    text-align: center;
+    padding: 30px 35px;
+}
+
+.privacyandpolicy img{
+    width: 100%;
+}
+
+.privacyandpolicy h2 {
+    font-size: 20px;
+}
+
+.privacyandpolicy h3 {
+    font-size: 18px;
+}
+
+}

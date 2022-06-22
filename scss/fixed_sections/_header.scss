@@ -1,0 +1,31 @@
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    background-color: black;
+    div{
+        width: 50%;
+    }
+    &__divlogo{
+        display: flex;
+        justify-content: center;
+        img{
+            margin-right: 12px;
+            margin-top: 8px;
+        }
+        
+    }
+    &__redesTop{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        margin-top: 8px;
+        li{
+            margin: 5px;
+            list-style: none;
+        }
+    }
+}
