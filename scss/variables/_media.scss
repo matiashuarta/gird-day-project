@@ -1,0 +1,197 @@
+@media only screen and (max-width: 1080px) {
+
+    .nav__checkbtn {
+        display: block;
+    }
+
+    .nav__menu {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.82);
+        transform: translate(-100%);
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav__menu a {
+        font-size: 36px;
+    }
+
+    .nav__menu li {
+        padding: 10px 10px 15px 10px;
+    }
+
+    .nav__menu a:after{
+        background: rgb(143, 25, 25);
+    }
+
+    #check:checked~.nav__menu {
+        transform: translate(0);
+    }
+
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    .header__redesTop {
+      display: none;
+    }
+
+    .musica {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none;
+        border-bottom: none;
+        padding: 20px 0px;
+    }
+
+    .greenMusica {
+        width: 65vw;
+        max-width: 480px;
+    }
+
+    .musica__musicaListen {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 155px;
+        width: 50%;
+    }
+
+    .musica__musicaListen p {
+        text-align: center;
+        color: white;
+        font-family: "CAMistery";
+        font-size: 25px;
+    }
+
+    .musica__musicaBoton {
+        background-color: rgb(143, 25, 25);
+        border-radius: 25px;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        font-family: "PoppinsRegular";
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 75px;
+    }
+
+    .videos {
+        font-size: 25px;
+    }
+
+    .videos__videomp4 {
+        margin-top: 20px;
+        width: 75vw;
+    }
+
+    .footer__divfooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__divfooter div {
+        padding: 10px;
+    }
+
+    .footer__divfooter div a:not(ul li a) {
+        font-size: 12px;
+    }
+
+    .imageTours img {
+        width: 300px;
+
+    }
+
+    .tours p {
+        font-family: "PoppinsRegular";
+        font-size: 30px;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    #customers {
+        font-family: "PoppinsRegular";
+        border-collapse: collapse;
+        border-color: white;
+        width: 70%;
+        color: white;
+        background-color: black;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .gridPadreAbout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "nav header header"
+            "about about about"
+            "billie billie billie"
+            "mike mike mike"
+            "tre tre tre"
+            "footer footer footer";
+    }
+
+    .aboutMembers {
+        font-family: "PoppinsRegular";
+        text-align: center;
+        margin-top: 10px;
+        padding: 25px;
+    }
+
+.termsandPolicy{
+    padding: 30px 35px;
+}
+
+.termsandPolicy p, .privacyandpolicy p {
+    font-family: "PoppinsRegular";
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.termsandPolicy img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.privacyandpolicy {
+    grid-area: privacyandpolicy;
+    font-size: 12px;
+    font-family: "PoppinsRegular";
+    color: white;
+    text-align: center;
+    padding: 30px 35px;
+}
+
+.privacyandpolicy img{
+    width: 100%;
+}
+
+.privacyandpolicy h2 {
+    font-size: 20px;
+}
+
+.privacyandpolicy h3 {
+    font-size: 18px;
+}
+
+}
