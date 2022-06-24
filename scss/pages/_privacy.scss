@@ -1,0 +1,25 @@
+.gridPrivacyPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav header header"
+        "privacyandpolicy privacyandpolicy privacyandpolicy"
+        "footer footer footer";
+}
+
+.privacyandpolicy {
+    grid-area: privacyandpolicy;
+    font-size: 20px;
+    font-family: "PoppinsRegular";
+    color: white;
+    text-align: center;
+    padding: 30px 350px;
+    h1 {
+        @extend %titulo;
+    }
+    h2, h3{
+        color: #9E1B2F;
+    }
+}

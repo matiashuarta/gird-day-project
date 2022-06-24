@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+@import './variables/extend';
 @import './fixed_sections/nav';
 @import './fixed_sections/header';
 @import './fixed_sections/footer';
@@ -37,17 +38,9 @@ body {
     background-color: black;
 }
 
-// Possible Mixin
-// // .about h1,
-// // .privacyandpolicy h1,
  .termsandPolicy h1  {
-     color: #9E1B2F;
-     font-size: 40px;
-     text-align: center;
-     font-family: "PoppinsLight";
-     margin-top: 20px;
+    @extend %titulo;
  }
- //end possible mixin
 
 .gridPadreTerms {
     display: grid;
@@ -80,32 +73,6 @@ body {
     width: 700px;
     margin-bottom: 50px;
     margin-top: 50px;
-}
-
-.gridPrivacyPadre {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "nav header header"
-        "privacyandpolicy privacyandpolicy privacyandpolicy"
-        "footer footer footer";
-}
-
-.privacyandpolicy {
-    grid-area: privacyandpolicy;
-    font-size: 20px;
-    font-family: "PoppinsRegular";
-    color: white;
-    text-align: center;
-    padding: 30px 350px;
-}
-
-.privacyandpolicy h1,
-h2,
-.privacyandpolicy h3 {
-    color: #9E1B2F;
 }
 
 /* Animaciones */
@@ -250,7 +217,7 @@ h2,
 
 /* Responsive Section */
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 720px) {
 
     .nav__checkbtn {
         display: block;

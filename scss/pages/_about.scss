@@ -17,11 +17,7 @@
         margin: 0 auto;
     }
     h1{
-        color: #9E1B2F;
-        font-size: 40px;
-        text-align: center;
-        font-family: "PoppinsLight";
-        margin-top: 20px;
+        @extend %titulo;
     }
     p{
         color: white;
