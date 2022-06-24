@@ -4,6 +4,7 @@
 }
 
 @import './variables/extend';
+@import './variables/tipografias';
 @import './fixed_sections/nav';
 @import './fixed_sections/header';
 @import './fixed_sections/footer';
@@ -13,26 +14,6 @@
 @import './pages/about';
 @import './pages/privacy';
 @import './pages/terms';
-
-@font-face {
-    font-family: 'CAMistery';
-    src: url("../fonts/CAMysteryGirl-Regular.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'PoppinsLight';
-    src: url("../fonts/Poppins/Poppins-Light.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'PoppinsRegular';
-    src: url("../fonts/Poppins/Poppins-Regular.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: 'PoppinsBold';
-    src: url("../fonts/Poppins/Poppins-Bold.ttf") format('truetype');
-}
 
 body {
     background-color: black;

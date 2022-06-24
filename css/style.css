@@ -9,6 +9,22 @@
   font-family: "CAMistery";
   margin-top: 20px; }
 
+@font-face {
+  font-family: 'CAMistery';
+  src: url("../fonts/CAMysteryGirl-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'PoppinsLight';
+  src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'PoppinsBold';
+  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype"); }
+
 .nav {
   grid-area: nav;
   top: 0;
@@ -333,22 +349,6 @@ h3 {
     width: 700px;
     margin-bottom: 50px;
     margin-top: 50px; }
-
-@font-face {
-  font-family: 'CAMistery';
-  src: url("../fonts/CAMysteryGirl-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'PoppinsLight';
-  src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'PoppinsRegular';
-  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'PoppinsBold';
-  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("truetype"); }
 
 body {
   background-color: black; }
