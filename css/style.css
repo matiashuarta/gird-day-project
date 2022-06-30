@@ -114,6 +114,9 @@
   grid-auto-flow: row;
   grid-template-areas: "nav header header" "portada portada portada" "musica musica musica" "videos videos videos" "footer footer footer"; }
 
+.titlePortada {
+  display: none; }
+
 .portada {
   grid-area: portada;
   text-align: center;

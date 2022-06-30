@@ -1,1 +1,7 @@
-- Se añadieron etiquetas h1 en tours.html y contact.html
+- Se añadieron etiquetas h1 en tours.html, contact.html e index.html
+- Etiqueta meta keywords
+- Etiqueda meta description
+- Titulos con nombre del proyecto
+- Jerarquía de archivos
+- Tamaño de elementos (fotos y videos)
+- Mapa de sitio
