@@ -9,14 +9,14 @@
     <meta name="description" content="Fan site for Green Day. Includes tour dates, image gallery, videos, and more!">
     <link rel="shortcut icon"
         href="https://scontent.fmvd1-1.fna.fbcdn.net/v/t1.18169-1/16195156_393929364318165_1397318602809471953_n.png?_nc_cat=110&ccb=1-7&_nc_sid=1eb0c7&_nc_ohc=rd0CeOQzkY8AX8JfubY&_nc_ht=scontent.fmvd1-1.fna&oh=00_AT8BGtM0_dKZ_vq6X3UMahwmtvUY5WIWthyyFtMwHUvxMQ&oe=62BB01D5">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Green Day | Gallery</title>
 </head>
 
 <body>
-    <div class="gridPadreAbout">
+    <div class="gridPadreGallery">
         <nav class="nav">
             <input type="checkbox" id="check">
             <label for="check" class="nav__checkbtn">
@@ -53,68 +53,143 @@
                 </nav>
             </div>
         </header>
+        <section class="gallery">
+        <h1>Tours Slideshows</h1>
+        <h2>Berlin, Germany</h2>
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="../img/gallery/01.jpg" style="width:100%">
+            </div>
 
-        <h2 style="text-align:center">Slideshow Gallery</h2>
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="../img/gallery/02.jpg" style="width:100%">
+            </div>
 
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="img_woods_wide.jpg" style="width:100%">
-  </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="../img/gallery/03.jpg" style="width:100%">
+            </div>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="img_5terre_wide.jpg" style="width:100%">
-  </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="../img/gallery/04.jpg" style="width:100%">
+            </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="img_mountains_wide.jpg" style="width:100%">
-  </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="../img/gallery/05.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="../img/gallery/06.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery/01.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery/02.jpg" style="width:100%" onclick="currentSlide(2)"
+                        alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery/03.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery/04.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery/05.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../img/gallery/06.jpg" style="width:100%" onclick="currentSlide(6)"
+                        alt="Snowy Mountains">
+                </div>
+            </div>
+        </div>
     
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="img_lights_wide.jpg" style="width:100%">
-  </div>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="img_snow_wide.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+        <h2>Berlin, Germany</h2>
+        <div class="container">
+            <div class="mySlides2">
+                <div class="numbertext">1 / 6</div>
+                <img src="../img/gallery/01.jpg" style="width:100%">
+            </div>
 
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+            <div class="mySlides2">
+                <div class="numbertext">2 / 6</div>
+                <img src="../img/gallery/02.jpg" style="width:100%">
+            </div>
 
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-    </div>
-  </div>
-</div>
+            <div class="mySlides2">
+                <div class="numbertext">3 / 6</div>
+                <img src="../img/gallery/03.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <div class="numbertext">4 / 6</div>
+                <img src="../img/gallery/04.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <div class="numbertext">5 / 6</div>
+                <img src="../img/gallery/05.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2">
+                <div class="numbertext">6 / 6</div>
+                <img src="../img/gallery/06.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides2(-1)">❮</a>
+            <a class="next" onclick="plusSlides2(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption2"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo2 cursor" src="../img/gallery/01.jpg" style="width:100%" onclick="currentSlide(1)"
+                        alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="../img/gallery/02.jpg" style="width:100%" onclick="currentSlide(2)"
+                        alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="../img/gallery/03.jpg" style="width:100%" onclick="currentSlide(3)"
+                        alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="../img/gallery/04.jpg" style="width:100%" onclick="currentSlide(4)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="../img/gallery/05.jpg" style="width:100%" onclick="currentSlide(5)"
+                        alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="../img/gallery/06.jpg" style="width:100%" onclick="currentSlide(6)"
+                        alt="Snowy Mountains">
+                </div>
+            </div>
+        </div>
+    </section>
 
 
         <footer class="footer">
@@ -146,8 +221,8 @@
                 window.scrollTo(0, 0);
             }
         </script>
-     
-
+        <script src="../js/gallery.js">
+        </script>
 </body>
 
 </html>
