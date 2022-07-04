@@ -24,6 +24,9 @@
         width: 100vw;
         transition: transform 0.5s linear;
     }
+    &__greenRed:hover {
+        transform: scale(1.1);
+    }
 }
 
 .musica {

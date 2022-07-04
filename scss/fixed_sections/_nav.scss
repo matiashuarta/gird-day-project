@@ -1,25 +1,30 @@
-.nav{
+.nav {
     grid-area: nav;
     top: 0;
     z-index: 1;
     position: sticky;
     background-color: black;
-    &__checkbtn{
+
+    &__checkbtn {
         font-size: 30px;
         color: #fff;
         padding: 40px;
         display: none;
     }
+
     #check {
         display: none;
     }
-    &__menu{
+
+    &__menu {
         display: flex;
         justify-content: left;
         flex-wrap: nowrap;
+
         li {
             list-style: none;
             padding: 15px 15px 25px 15px;
+
             a {
                 color: white;
                 text-transform: none;
@@ -29,14 +34,20 @@
                 background-color: transparent;
 
             }
+
             a:hover {
                 background-color: rgb(143, 25, 25);
             }
+
         }
+
+        &--active {
+            background-color: rgb(143, 25, 25);
+        }
+
         li:hover {
             background-color: rgb(143, 25, 25);
         }
 
     }
 }
-
