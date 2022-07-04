@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0; }
 
-.tours h1, .gallery h1, .contact h1, .about h1, .privacyandpolicy h1, .termsandPolicy h1 {
+.tours h1, .musicPage h1, .gallery h1, .contact h1, .about h1, .privacyandpolicy h1, .termsandPolicy h1 {
   color: #9E1B2F;
   font-size: 40px;
   text-align: center;
@@ -15,6 +15,13 @@
   text-align: center;
   font-family: "PoppinsBold";
   margin-top: 20px; }
+
+.musicPage__album01 h2 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  font-family: "PoppinsBold";
+  margin-bottom: 1.5 rem; }
 
 @font-face {
   font-family: 'CAMistery';
@@ -51,7 +58,7 @@
     flex-wrap: nowrap; }
     .nav__menu li {
       list-style: none;
-      padding: 15px 15px 25px 15px; }
+      padding: 5px 15px 15px 15px; }
       .nav__menu li a {
         color: white;
         text-transform: none;
@@ -241,6 +248,28 @@
   grid-area: imageTours;
   margin-top: 30px;
   text-align: center; }
+
+.gridPadreMusic {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nav header header" "musicPage musicPage musicPage" "musicPage musicPage musicPage" "footer footer footer"; }
+
+.musicPage {
+  grid-area: musicPage; }
+  .musicPage__album01 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px; }
+    .musicPage__album01 div {
+      margin-bottom: 1rem; }
+  .musicPage__americanIdiot img {
+    margin: 5px;
+    border-radius: 12px;
+    filter: drop-shadow(0 0 5px rgba(158, 27, 47, 0.7)); }
 
 * {
   box-sizing: border-box; }
@@ -537,6 +566,8 @@ h3 {
     font-size: 12px; }
   .imageTours img {
     width: 300px; }
+  .tours {
+    padding: 0px; }
   .tours p {
     font-family: "PoppinsRegular";
     font-size: 30px;
@@ -546,13 +577,13 @@ h3 {
     font-family: "PoppinsRegular";
     border-collapse: collapse;
     border-color: white;
-    width: 70%;
+    width: 100%;
     color: white;
     background-color: black; }
   #customers td,
   #customers th {
     border: 1px solid #ddd;
-    padding: 12px;
+    padding: 2px;
     font-size: 12px; }
   .gridPadreAbout {
     display: grid;
@@ -567,7 +598,8 @@ h3 {
     padding: 25px; }
   .termsandPolicy {
     padding: 30px 35px; }
-  .termsandPolicy p, .privacyandpolicy p {
+  .termsandPolicy p,
+  .privacyandpolicy p {
     font-family: "PoppinsRegular";
     font-size: 15px;
     color: white;
@@ -589,7 +621,14 @@ h3 {
   .privacyandpolicy h2 {
     font-size: 20px; }
   .privacyandpolicy h3 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .musicPage__album01 {
+    flex-direction: column;
+    width: 70%; }
+    .musicPage__album01 iframe {
+      width: 100%; }
+    .musicPage__album01 img {
+      width: 100%; } }
 
 body {
   background-color: black; }

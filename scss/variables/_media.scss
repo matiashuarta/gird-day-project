@@ -23,7 +23,7 @@
         padding: 10px 10px 15px 10px;
     }
 
-    .nav__menu a:after{
+    .nav__menu a:after {
         background: rgb(143, 25, 25);
     }
 
@@ -36,7 +36,7 @@
     }
 
     .header__redesTop {
-      display: none;
+        display: none;
     }
 
     .musica {
@@ -111,6 +111,10 @@
 
     }
 
+    .tours {
+        padding: 0px;
+    }
+
     .tours p {
         font-family: "PoppinsRegular";
         font-size: 30px;
@@ -122,7 +126,7 @@
         font-family: "PoppinsRegular";
         border-collapse: collapse;
         border-color: white;
-        width: 70%;
+        width: 100%;
         color: white;
         background-color: black;
     }
@@ -130,7 +134,7 @@
     #customers td,
     #customers th {
         border: 1px solid #ddd;
-        padding: 12px;
+        padding: 2px;
         font-size: 12px;
     }
 
@@ -155,43 +159,59 @@
         padding: 25px;
     }
 
-.termsandPolicy{
-    padding: 30px 35px;
-}
+    .termsandPolicy {
+        padding: 30px 35px;
+    }
 
-.termsandPolicy p, .privacyandpolicy p {
-    font-family: "PoppinsRegular";
-    font-size: 15px;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+    .termsandPolicy p,
+    .privacyandpolicy p {
+        font-family: "PoppinsRegular";
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
 
-.termsandPolicy img {
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top: 15px;
-}
+    .termsandPolicy img {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
 
-.privacyandpolicy {
-    grid-area: privacyandpolicy;
-    font-size: 12px;
-    font-family: "PoppinsRegular";
-    color: white;
-    text-align: center;
-    padding: 30px 35px;
-}
+    .privacyandpolicy {
+        grid-area: privacyandpolicy;
+        font-size: 12px;
+        font-family: "PoppinsRegular";
+        color: white;
+        text-align: center;
+        padding: 30px 35px;
+    }
 
-.privacyandpolicy img{
-    width: 100%;
-}
+    .privacyandpolicy img {
+        width: 100%;
+    }
 
-.privacyandpolicy h2 {
-    font-size: 20px;
-}
+    .privacyandpolicy h2 {
+        font-size: 20px;
+    }
 
-.privacyandpolicy h3 {
-    font-size: 18px;
-}
+    .privacyandpolicy h3 {
+        font-size: 18px;
+    }
 
+    .musicPage {
+        &__album01 {
+            flex-direction: column;
+            width: 70%;
+            iframe{
+                width: 100%;
+            }
+            img{
+                width: 100%;
+            } 
+        }
+
+
+        
+    }
 }
