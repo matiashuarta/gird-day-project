@@ -15,14 +15,20 @@
 
     h1 {
         @extend %titulo;
+        margin-bottom: 35px;
     }
 
     h2 {
         @extend %album;
+        margin: 0 auto;
+        width: 50%;
     }
 
-    h3 {
+    p {
         @extend %subtitle;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 10px;
     }
 
     &__album01 {
@@ -32,43 +38,71 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 50px;
+
         h2 {
             @extend %album;
         }
-        div{
+
+        div {
             margin-bottom: 1rem;
         }
     }
-    &__americanIdiot{
-        img{
+
+    &__americanIdiot {
+        img {
             margin: 5px;
             border-radius: 12px;
             filter: drop-shadow(0 0 5px rgba(158, 27, 47, 0.7));
-            max-width: 480px;
+            max-width: 380px;
+            transition: transform 0.5s linear;
         }
     }
-    &__warning{
-        img{
+
+    &__americanIdiot img:hover {
+        transform: scale(1.1);
+    }
+
+    &__warning {
+        img {
             margin: 5px;
             border-radius: 12px;
             filter: drop-shadow(0 0 5px rgba(145, 245, 125, 0.7));
-            max-width: 480px;
+            max-width: 380px;
+            transition: transform 0.5s linear;
+
         }
+
     }
-    &__21st{
-        img{
+
+    &__warning img:hover {
+        transform: scale(1.1);
+    }
+
+    &__21st {
+        img {
             margin: 5px;
             border-radius: 12px;
             filter: drop-shadow(0 0 5px rgba(243, 240, 45, 0.7));
-            max-width: 480px;
+            max-width: 380px;
+            transition: transform 0.5s linear;
         }
     }
-    &__awesomeasfuck{
-        img{
+
+    &__21st img:hover {
+        transform: scale(1.1);
+    }
+
+    &__awesomeasfuck {
+        img {
             margin: 5px;
             border-radius: 12px;
             filter: drop-shadow(0 0 5px rgba(245, 143, 206, 0.7));
-            max-width: 480px;
+            max-width: 380px;
+            transition: transform 0.5s linear;
         }
+    }
+
+    &__awesomeasfuck img:hover {
+        transform: scale(1.1);
     }
 }

@@ -18,14 +18,14 @@
 
 .musicPage h2, .musicPage__album01 h2 {
   color: white;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
   font-family: "PoppinsRegular";
   margin-bottom: 1.5 rem; }
 
-.musicPage h3 {
+.musicPage p {
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   font-family: "PoppinsLight";
   margin-top: 20px; }
@@ -265,6 +265,15 @@
 
 .musicPage {
   grid-area: musicPage; }
+  .musicPage h1 {
+    margin-bottom: 35px; }
+  .musicPage h2 {
+    margin: 0 auto;
+    width: 50%; }
+  .musicPage p {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px; }
   .musicPage__album01 {
     display: flex;
     flex-direction: row;
@@ -278,22 +287,34 @@
     margin: 5px;
     border-radius: 12px;
     filter: drop-shadow(0 0 5px rgba(158, 27, 47, 0.7));
-    max-width: 480px; }
+    max-width: 380px;
+    transition: transform 0.5s linear; }
+  .musicPage__americanIdiot img:hover {
+    transform: scale(1.1); }
   .musicPage__warning img {
     margin: 5px;
     border-radius: 12px;
     filter: drop-shadow(0 0 5px rgba(145, 245, 125, 0.7));
-    max-width: 480px; }
+    max-width: 380px;
+    transition: transform 0.5s linear; }
+  .musicPage__warning img:hover {
+    transform: scale(1.1); }
   .musicPage__21st img {
     margin: 5px;
     border-radius: 12px;
     filter: drop-shadow(0 0 5px rgba(243, 240, 45, 0.7));
-    max-width: 480px; }
+    max-width: 380px;
+    transition: transform 0.5s linear; }
+  .musicPage__21st img:hover {
+    transform: scale(1.1); }
   .musicPage__awesomeasfuck img {
     margin: 5px;
     border-radius: 12px;
     filter: drop-shadow(0 0 5px rgba(245, 143, 206, 0.7));
-    max-width: 480px; }
+    max-width: 380px;
+    transition: transform 0.5s linear; }
+  .musicPage__awesomeasfuck img:hover {
+    transform: scale(1.1); }
 
 * {
   box-sizing: border-box; }
