@@ -17,8 +17,17 @@
         @extend %titulo;
     }
 
+    h2 {
+        @extend %album;
+    }
+
+    h3 {
+        @extend %subtitle;
+    }
+
     &__album01 {
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         width: 90%;
         margin: 0 auto;
@@ -34,8 +43,32 @@
         img{
             margin: 5px;
             border-radius: 12px;
-            // box-shadow: 0 0 6px rgba(158, 27, 47, 0.425), 0 0 10px rgba(158, 27, 47, 0.151);
             filter: drop-shadow(0 0 5px rgba(158, 27, 47, 0.7));
+            max-width: 480px;
+        }
+    }
+    &__warning{
+        img{
+            margin: 5px;
+            border-radius: 12px;
+            filter: drop-shadow(0 0 5px rgba(145, 245, 125, 0.7));
+            max-width: 480px;
+        }
+    }
+    &__21st{
+        img{
+            margin: 5px;
+            border-radius: 12px;
+            filter: drop-shadow(0 0 5px rgba(243, 240, 45, 0.7));
+            max-width: 480px;
+        }
+    }
+    &__awesomeasfuck{
+        img{
+            margin: 5px;
+            border-radius: 12px;
+            filter: drop-shadow(0 0 5px rgba(245, 143, 206, 0.7));
+            max-width: 480px;
         }
     }
 }
