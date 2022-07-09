@@ -6,9 +6,11 @@
 
     .nav__menu {
         position: fixed;
+        top: 114px;
+        bottom: 0;
         flex-direction: column;
         width: 100vw;
-        height: 100vh;
+        overflow: auto;
         background: rgba(0, 0, 0, 0.82);
         transform: translate(-100%);
         text-align: center;
@@ -202,18 +204,29 @@
     .musicPage {
         &__album01 {
             flex-direction: column;
+            align-items: center;
             width: 70%;
 
             iframe {
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
+                margin-left: 12px;
             }
 
             img {
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
+                margin-left: 12px;
             }
         }
 
+        h2 {
+            font-size: 16px;
+        }
 
+        p {
+            font-size: 13px;
+        }
 
     }
 }
