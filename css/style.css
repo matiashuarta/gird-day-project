@@ -4,9 +4,9 @@
 
 .tours h1, .musicPage h1, .gallery h1, .contact h1, .about h1, .privacyandpolicy h1, .termsandPolicy h1 {
   color: #9E1B2F;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
-  font-family: "CAMistery";
+  font-family: "PoppinsBold";
   margin-top: 20px; }
 
 .gallery h2 {
@@ -94,7 +94,7 @@
     display: flex;
     justify-content: center; }
     .header__divlogo img {
-      margin-right: 12px;
+      margin-right: 3px;
       margin-top: 8px; }
   .header__redesTop {
     display: flex;
@@ -238,18 +238,32 @@
     background-color: black; }
     .tours #customers td, .tours #customers th {
       border: 1px solid #ddd;
-      padding: 18px; }
+      padding: 18px;
+      text-align: center; }
     .tours #customers tr:nth-child(even) {
       background-color: black; }
     .tours #customers tr:hover {
-      background-color: #9E1B2F; }
+      background-color: #8f1919; }
     .tours #customers th {
       padding-top: 35px;
       padding-bottom: 35px;
       border-color: white;
-      text-align: left;
-      background-color: #9E1B2F;
+      text-align: center;
+      background-color: #8f1919;
       color: white; }
+    .tours #customers .btn {
+      background-color: #8f1919;
+      border-radius: 25px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      font-family: "PoppinsRegular";
+      cursor: pointer;
+      width: 120px; }
+    .tours #customers .btn:hover {
+      background-color: #cc2c2c; }
 
 .imageTours {
   grid-area: imageTours;
@@ -277,7 +291,7 @@
   .musicPage__album01 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 90%;
     margin: 0 auto;
     margin-top: 50px; }
@@ -288,7 +302,8 @@
     border-radius: 12px;
     filter: drop-shadow(0 0 5px rgba(158, 27, 47, 0.7));
     max-width: 380px;
-    transition: transform 0.5s linear; }
+    transition: transform 0.5s linear;
+    margin-right: 80px; }
   .musicPage__americanIdiot img:hover {
     transform: scale(1.1); }
   .musicPage__warning img {
@@ -296,7 +311,8 @@
     border-radius: 12px;
     filter: drop-shadow(0 0 5px rgba(145, 245, 125, 0.7));
     max-width: 380px;
-    transition: transform 0.5s linear; }
+    transition: transform 0.5s linear;
+    margin-right: 80px; }
   .musicPage__warning img:hover {
     transform: scale(1.1); }
   .musicPage__21st img {
@@ -304,7 +320,8 @@
     border-radius: 12px;
     filter: drop-shadow(0 0 5px rgba(243, 240, 45, 0.7));
     max-width: 380px;
-    transition: transform 0.5s linear; }
+    transition: transform 0.5s linear;
+    margin-right: 80px; }
   .musicPage__21st img:hover {
     transform: scale(1.1); }
   .musicPage__awesomeasfuck img {
@@ -312,7 +329,8 @@
     border-radius: 12px;
     filter: drop-shadow(0 0 5px rgba(245, 143, 206, 0.7));
     max-width: 380px;
-    transition: transform 0.5s linear; }
+    transition: transform 0.5s linear;
+    margin-right: 80px; }
   .musicPage__awesomeasfuck img:hover {
     transform: scale(1.1); }
 
@@ -332,7 +350,7 @@
     color: white;
     font-size: 16 px;
     text-align: center;
-    font-family: "PoppinsBold";
+    font-family: "PoppinsRegular";
     width: 65%;
     margin: 0 auto; }
 
@@ -470,7 +488,7 @@
     color: white;
     font-size: 16 px;
     text-align: center;
-    font-family: "PoppinsBold";
+    font-family: "PoppinsRegular";
     margin-top: 20px; }
 
 .aboutMembers {
@@ -511,8 +529,15 @@ h3 {
   color: white;
   text-align: center;
   padding: 30px 350px; }
+  .privacyandpolicy h1 {
+    margin-top: 0px;
+    font-size: 27px; }
   .privacyandpolicy h2, .privacyandpolicy h3 {
     color: #9E1B2F; }
+  .privacyandpolicy p {
+    font-size: 18px; }
+  .privacyandpolicy img {
+    width: 100%; }
 
 .gridPadreTerms {
   display: grid;
@@ -528,15 +553,23 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding: 30px 350px; }
+  .termsandPolicy h1 {
+    margin-top: 0px;
+    font-size: 27px; }
   .termsandPolicy p {
     font-family: "PoppinsRegular";
-    font-size: 20px;
+    font-size: 15px;
     color: white;
-    align-content: center; }
-  .termsandPolicy img {
+    align-content: center;
+    text-align: center; }
+  .termsandPolicy__test2 {
+    width: 700px;
+    margin-bottom: 15px;
+    margin-top: 15px; }
+  .termsandPolicy__test {
     width: 700px;
     margin-bottom: 50px;
-    margin-top: 50px; }
+    margin-top: 30px; }
 
 @media only screen and (max-width: 1080px) {
   .nav__checkbtn {
