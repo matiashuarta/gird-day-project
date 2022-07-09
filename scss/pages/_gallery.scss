@@ -19,9 +19,11 @@
   grid-area: gallery;
   h1 {
       @extend %titulo;
+      font-size: 27px;
   }
   h2 {
       @extend %slideshow;
+      font-size: 19px;
   }
   p{
     color: white;

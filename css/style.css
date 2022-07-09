@@ -346,6 +346,10 @@
 
 .gallery {
   grid-area: gallery; }
+  .gallery h1 {
+    font-size: 27px; }
+  .gallery h2 {
+    font-size: 19px; }
   .gallery p {
     color: white;
     font-size: 16 px;
