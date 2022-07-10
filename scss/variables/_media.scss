@@ -6,7 +6,7 @@
 
     .nav__menu {
         position: fixed;
-        top: 114px;
+        top: 115.4px;
         bottom: 0;
         flex-direction: column;
         width: 100vw;
@@ -109,12 +109,12 @@
     }
 
     .imageTours img {
-        width: 300px;
-
+        width: 80vw;
     }
 
     .tours {
         padding: 0px;
+        width: 100%;
     }
 
     .tours p {
@@ -128,7 +128,7 @@
         font-family: "PoppinsRegular";
         border-collapse: collapse;
         border-color: white;
-        width: 100%;
+        width: 80%;
         color: white;
         background-color: black;
     }
@@ -136,9 +136,27 @@
     #customers td,
     #customers th {
         border: 1px solid #ddd;
-        padding: 2px;
-        font-size: 12px;
-    }
+        padding: 17px;
+        font-size: 14px;
+}
+
+.btn {
+    background-color: rgb(143, 25, 25);
+    border-radius: 25px;
+    color: white;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "PoppinsRegular";
+    cursor: pointer;
+    width: 65px;
+}
+
+.btn:hover {
+    background-color: rgb(204, 44, 44);
+}
+
 
     .gridPadreAbout {
         display: grid;
@@ -229,4 +247,10 @@
         }
 
     }
+
+    .container {
+        position: relative;
+        width: 100%;
+        margin: 20px auto 20px;
+      }
 }

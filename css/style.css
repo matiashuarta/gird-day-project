@@ -229,41 +229,44 @@
   padding: 0 20px 20px 20px; }
   .tours h1 {
     margin-bottom: 20px; }
-  .tours #customers {
-    font-family: "PoppinsRegular";
-    border-collapse: collapse;
-    border-color: white;
-    width: 70%;
-    color: white;
+
+#customers {
+  font-family: "PoppinsRegular";
+  border-collapse: collapse;
+  border-color: white;
+  width: 70%;
+  color: white;
+  background-color: black; }
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 18px;
+    text-align: center; }
+  #customers tr:nth-child(even) {
     background-color: black; }
-    .tours #customers td, .tours #customers th {
-      border: 1px solid #ddd;
-      padding: 18px;
-      text-align: center; }
-    .tours #customers tr:nth-child(even) {
-      background-color: black; }
-    .tours #customers tr:hover {
-      background-color: #8f1919; }
-    .tours #customers th {
-      padding-top: 35px;
-      padding-bottom: 35px;
-      border-color: white;
-      text-align: center;
-      background-color: #8f1919;
-      color: white; }
-    .tours #customers .btn {
-      background-color: #8f1919;
-      border-radius: 25px;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      display: inline-block;
-      font-size: 16px;
-      font-family: "PoppinsRegular";
-      cursor: pointer;
-      width: 120px; }
-    .tours #customers .btn:hover {
-      background-color: #cc2c2c; }
+  #customers tr:hover {
+    background-color: #8f1919; }
+  #customers th {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-color: white;
+    text-align: center;
+    background-color: #8f1919;
+    color: white; }
+
+.btn {
+  background-color: #8f1919;
+  border-radius: 25px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "PoppinsRegular";
+  cursor: pointer;
+  width: 120px; }
+
+.btn:hover {
+  background-color: #cc2c2c; }
 
 .imageTours {
   grid-area: imageTours;
@@ -580,7 +583,7 @@ h3 {
     display: block; }
   .nav__menu {
     position: fixed;
-    top: 114px;
+    top: 115.4px;
     bottom: 0;
     flex-direction: column;
     width: 100vw;
@@ -649,9 +652,10 @@ h3 {
   .footer__divfooter div a:not(ul li a) {
     font-size: 12px; }
   .imageTours img {
-    width: 300px; }
+    width: 80vw; }
   .tours {
-    padding: 0px; }
+    padding: 0px;
+    width: 100%; }
   .tours p {
     font-family: "PoppinsRegular";
     font-size: 30px;
@@ -661,14 +665,26 @@ h3 {
     font-family: "PoppinsRegular";
     border-collapse: collapse;
     border-color: white;
-    width: 100%;
+    width: 80%;
     color: white;
     background-color: black; }
-  #customers td,
-  #customers th {
+  #customers td, #customers th {
     border: 1px solid #ddd;
-    padding: 2px;
-    font-size: 12px; }
+    padding: 17px;
+    font-size: 14px; }
+  .btn {
+    background-color: #8f1919;
+    border-radius: 25px;
+    color: white;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "PoppinsRegular";
+    cursor: pointer;
+    width: 65px; }
+  .btn:hover {
+    background-color: #cc2c2c; }
   .gridPadreAbout {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -721,7 +737,11 @@ h3 {
   .musicPage h2 {
     font-size: 16px; }
   .musicPage p {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .container {
+    position: relative;
+    width: 100%;
+    margin: 20px auto 20px; } }
 
 body {
   background-color: black; }
