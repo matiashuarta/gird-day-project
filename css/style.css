@@ -254,16 +254,16 @@
     color: white; }
 
 .btn {
-  background-color: #8f1919;
-  border-radius: 25px;
+  background-color: #9c2323;
+  border-radius: 12px;
   color: white;
-  padding: 15px 32px;
+  padding: 8px 16px;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "PoppinsRegular";
   cursor: pointer;
-  width: 120px; }
+  width: 90px; }
 
 .btn:hover {
   background-color: #cc2c2c; }
@@ -302,8 +302,7 @@
       margin-bottom: 1rem; }
   .musicPage__americanIdiot img {
     margin: 5px;
-    border-radius: 12px;
-    filter: drop-shadow(0 0 5px rgba(158, 27, 47, 0.7));
+    filter: drop-shadow(0 0 1px rgba(158, 27, 47, 0.7));
     max-width: 380px;
     transition: transform 0.5s linear;
     margin-right: 80px; }
@@ -311,8 +310,7 @@
     transform: scale(1.1); }
   .musicPage__warning img {
     margin: 5px;
-    border-radius: 12px;
-    filter: drop-shadow(0 0 5px rgba(145, 245, 125, 0.7));
+    filter: drop-shadow(0 0 1px rgba(145, 245, 125, 0.7));
     max-width: 380px;
     transition: transform 0.5s linear;
     margin-right: 80px; }
@@ -320,8 +318,7 @@
     transform: scale(1.1); }
   .musicPage__21st img {
     margin: 5px;
-    border-radius: 12px;
-    filter: drop-shadow(0 0 5px rgba(243, 240, 45, 0.7));
+    filter: drop-shadow(0 0 1px rgba(243, 240, 45, 0.7));
     max-width: 380px;
     transition: transform 0.5s linear;
     margin-right: 80px; }
@@ -329,12 +326,19 @@
     transform: scale(1.1); }
   .musicPage__awesomeasfuck img {
     margin: 5px;
-    border-radius: 12px;
-    filter: drop-shadow(0 0 5px rgba(245, 143, 206, 0.7));
+    filter: drop-shadow(0 0 1px rgba(245, 143, 206, 0.7));
     max-width: 380px;
     transition: transform 0.5s linear;
     margin-right: 80px; }
   .musicPage__awesomeasfuck img:hover {
+    transform: scale(1.1); }
+  .musicPage__dookie img {
+    margin: 5px;
+    filter: drop-shadow(0 0 1px #fdf9f9);
+    max-width: 380px;
+    transition: transform 0.5s linear;
+    margin-right: 80px; }
+  .musicPage__dookie img:hover {
     transform: scale(1.1); }
 
 * {

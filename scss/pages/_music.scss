@@ -51,8 +51,8 @@
     &__americanIdiot {
         img {
             margin: 5px;
-            border-radius: 12px;
-            filter: drop-shadow(0 0 5px rgba(158, 27, 47, 0.7));
+            // border-radius: 12px;
+            filter: drop-shadow(0 0 1px rgba(158, 27, 47, 0.7));
             max-width: 380px;
             transition: transform 0.5s linear;
             margin-right: 80px;
@@ -66,8 +66,8 @@
     &__warning {
         img {
             margin: 5px;
-            border-radius: 12px;
-            filter: drop-shadow(0 0 5px rgba(145, 245, 125, 0.7));
+            // border-radius: 12px;
+            filter: drop-shadow(0 0 1px rgba(145, 245, 125, 0.7));
             max-width: 380px;
             transition: transform 0.5s linear;
             margin-right: 80px;
@@ -82,8 +82,8 @@
     &__21st {
         img {
             margin: 5px;
-            border-radius: 12px;
-            filter: drop-shadow(0 0 5px rgba(243, 240, 45, 0.7));
+            // border-radius: 12px;
+            filter: drop-shadow(0 0 1px rgba(243, 240, 45, 0.7));
             max-width: 380px;
             transition: transform 0.5s linear;
             margin-right: 80px;
@@ -97,8 +97,8 @@
     &__awesomeasfuck {
         img {
             margin: 5px;
-            border-radius: 12px;
-            filter: drop-shadow(0 0 5px rgba(245, 143, 206, 0.7));
+            // border-radius: 12px;
+            filter: drop-shadow(0 0 1px rgba(245, 143, 206, 0.7));
             max-width: 380px;
             transition: transform 0.5s linear;
             margin-right: 80px;
@@ -106,6 +106,21 @@
     }
 
     &__awesomeasfuck img:hover {
+        transform: scale(1.1);
+    }
+
+    &__dookie {
+        img {
+            margin: 5px;
+            // border-radius: 12px;
+            filter: drop-shadow(0 0 1px rgb(253, 249, 249));
+            max-width: 380px;
+            transition: transform 0.5s linear;
+            margin-right: 80px;
+        }
+    }
+
+    &__dookie img:hover {
         transform: scale(1.1);
     }
 }
