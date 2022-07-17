@@ -12,6 +12,7 @@
 
 .musicPage {
     grid-area: musicPage;
+    flex-direction: column;
 
     h1 {
         @extend %titulo;

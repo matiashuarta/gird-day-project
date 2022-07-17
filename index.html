@@ -15,7 +15,7 @@
     <title>Green Day | Fan Site</title>
 </head>
 
-<body>
+<body id="body" onload="myFunction()">
     <div class="gridPadreIndex">
         <nav class="nav">
             <input type="checkbox" id="check">
@@ -47,18 +47,20 @@
                         <li><a
                                 href="https://twitter.com/GreenDay?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
                                     src="./img/iconos/iconos-12.png" alt="Twitter"></a></li>
-                        <li><a
-                                href="https://www.youtube.com/channel/UCqC_GY2ZiENFz2pwL0cSfAw"><img
+                        <li><a href="https://www.youtube.com/channel/UCqC_GY2ZiENFz2pwL0cSfAw"><img
                                     src="./img/iconos/iconos-13.png" alt="YouTube"></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <section class="portada appear">
+        <div class="divloader">
+            <div id="loader"></div>
+        </div>
+        <section style="display:none;" class="animate-bottom portada appear">
             <h1 class="titlePortada">Green Day</h1>
             <img class="portada__greenRed" src="https://i.ibb.co/dLrSmP7/1111.jpg" alt="Green Red">
         </section>
-        <section class="musica reveal">
+        <section style="display:none;" class="animate-bottom musica reveal">
             <div>
                 <img class="musica__greenMusica" src="./img/GreenDaySection.jpg" alt="greenMusica">
             </div>
@@ -69,12 +71,12 @@
                     onclick="window.open('https://open.spotify.com/album/1AHZd3C3S8m8fFrhFxyk79','_blank');">
             </div>
         </section>
-        <section class="videos reveal fade-left">
+        <section style="display:none;" class="animate-bottom videos reveal fade-left">
             <p>VIDEOS</p>
             <video class="videos__videomp4 reveal fade-left" controls="on" autoplay="on" muted>
                 <source src="./img/video.mp4" type="video/mp4">
         </section>
-        <footer class="footer">
+        <footer id="footer" style="display:none;" class="footer">
             <div class="footer__divfooter">
                 <div>
                     <a href="./pages/terms.html">Terms and Conditions</a>
@@ -104,7 +106,8 @@
             window.scrollTo(0, 0);
         }
     </script>
-      <script src="./js/animations.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/loader.js"></script>
 </body>
 
 </html>

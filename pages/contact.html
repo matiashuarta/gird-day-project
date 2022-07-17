@@ -14,7 +14,7 @@
     <title>Green Day | Contact</title>
 </head>
 
-<body>
+<body id="body" onload="myFunction()">
     <div class="gridPadreContact">
         <nav class="nav">
             <input type="checkbox" id="check">
@@ -53,7 +53,10 @@
                 </nav>
             </div>
         </header>
-        <section class="contact fir">
+        <div class="divloader">
+            <div id="loader"></div>
+        </div>
+        <section style="display:none;" class="animate-bottom contact fir">
             <h1>Contact Us</h1>
             <form class="contact__form" action="">
                 <label for="fname">First Name</label>
@@ -78,7 +81,7 @@
                 <input type="submit" value="Submit">
             </form>
         </section>
-        <footer class="footer">
+        <footer id="footer" style="display:none;" class="animate-bottom footer">
             <div class="footer__divfooter">
                 <div>
                     <a href="./pages/terms.html">Terms and Conditions</a>
@@ -109,6 +112,7 @@
         }
     </script>
     <script src="../js/animations.js"></script>
+    <script src="../js/loader.js"></script>
 </body>
 
 </html>

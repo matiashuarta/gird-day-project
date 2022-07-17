@@ -14,7 +14,7 @@
     <title>Green Day | Terms and Conditions</title>
 </head>
 
-<body>
+<body id="body" onload="myFunction()">
     <div class="gridPadreTerms">
         <nav class="nav">
             <input type="checkbox" id="check">
@@ -54,7 +54,10 @@
                 </nav>
             </div>
         </header>
-        <section class="termsandPolicy fib">
+        <div class="divloader">
+            <div id="loader"></div>
+        </div>
+        <section style="display:none;" class="animate-bottom termsandPolicy fib">
             <h1>Terms and Conditions</h1>
             <img class="termsandPolicy__test"
                 src="../img/terms.jpg" alt="GreenTerms">
@@ -148,7 +151,7 @@
             </p> <br>
             <img class="termsandPolicy__test2" src="../img/billie.jpg" alt="Billie">
         </section>
-        <footer class="footer">
+        <footer id="footer" style="display:none;" class="footer">
             <div class="footer__divfooter">
                 <div>
                     <a href="./terms.html">Terms and Conditions</a>
@@ -178,6 +181,7 @@
             window.scrollTo(0, 0);
         }
     </script>
+    <script src="../js/loader.js"></script>
 </body>
 
 </html>

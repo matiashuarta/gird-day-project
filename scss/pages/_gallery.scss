@@ -17,6 +17,7 @@
 
 .gallery {
   grid-area: gallery;
+  flex-direction: column;
   h1 {
       @extend %titulo;
       font-size: 27px;

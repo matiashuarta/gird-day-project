@@ -14,7 +14,7 @@
     <title>Green Day | Privacy and Policy</title>
 </head>
 
-<body>
+<body id="body" onload="myFunction()">
 
     <div class="gridPrivacyPadre">
         <nav class="nav">
@@ -53,7 +53,10 @@
                 </nav>
             </div>
         </header>
-        <section class="privacyandpolicy fib">
+        <div class="divloader">
+            <div id="loader"></div>
+        </div>
+        <section style="display:none;" class="animate-bottom privacyandpolicy fib">
             <h1>Privacy and Policy</h1><br>
             <img src="https://cdn.britannica.com/26/198426-050-90AAAC1B/Green-Day-Mike-Dirnt-Billie-Joe-Armstrong.jpg"
                 alt="Policy"><br>
@@ -184,7 +187,7 @@
                 Policy are effective when they are posted on this page.</p><br><br>
             <img src="../img/privacy.jpg" alt="Privacy">
         </section>
-        <footer class="footer">
+        <footer id="footer" style="display:none;" class="footer">
             <div class="footer__divfooter">
                 <div>
                     <a href="./terms.html">Terms and Conditions</a>
@@ -216,6 +219,7 @@
         }
     </script>
     <script src="../js/animations.js"></script>
+    <script src="../js/loader.js"></script>
 </body>
 
 

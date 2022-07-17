@@ -12,6 +12,8 @@
 
 .contact {
     grid-area: contact;
+    flex-direction: column;
+    min-height: 85vh;
     margin: 0 auto;
     padding-top: 20px;
     h1{

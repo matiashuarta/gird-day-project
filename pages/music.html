@@ -15,7 +15,7 @@
     <title>Green Day | Music</title>
 </head>
 
-<body>
+<body id="body" onload="myFunction()">
     <div class="gridPadreMusic">
         <nav class="nav">
             <input type="checkbox" id="check">
@@ -53,7 +53,10 @@
                 </nav>
             </div>
         </header>
-        <section class="musicPage">
+        <div class="divloader">
+            <div id="loader"></div>
+        </div>
+        <section style="display:none;" class="animate-bottom musicPage">
             <h1>Music</h1>
             <h2 class="fir">Dookie (1994)</h2>
             <p class="fil">Dookie (stylized as dookie) is the third studio album and the major label debut by American
@@ -78,8 +81,8 @@
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
             </section>
-            <h2 class="fir">Warning (2000)</h2>
-            <p class="fil">Warning (stylized as WARNING:) is the sixth studio album by American rock band Green Day,
+            <h2 class="reveal fir">Warning (2000)</h2>
+            <p class="reveal fil">Warning (stylized as WARNING:) is the sixth studio album by American rock band Green Day,
                 released
                 on October 3, 2000, by Reprise Records. Building upon its predecessor Nimrod (1997), it eschewed the
                 band's trademark sound and incorporated acoustic elements and pop and folk styles. Lyrically, the
@@ -89,11 +92,11 @@
             </p>
             <section class="musicPage__album01">
                 <div>
-                    <div class="musicPage__warning fir">
+                    <div class="musicPage__warning reveal fade-left">
                         <img src="../img/music/03.jpg" alt="Warning">
                     </div>
                 </div>
-                <div class="musicPage__spotifyAmerican fil">
+                <div class="musicPage__spotifyAmerican reveal fade-right">
                     <iframe style="border-radius:0px"
                         src="https://open.spotify.com/embed/album/3ifIxGNsG1XmLdoanRRIWB?utm_source=generator"
                         width="370" height="393" frameBorder="0" allowfullscreen=""
@@ -169,7 +172,7 @@
                 </div>
             </section>
         </section>
-        <footer class="footer">
+        <footer id="footer" style="display:none;" class="animate-bottom footer">
             <div class="footer__divfooter">
                 <div>
                     <a href="./terms.html">Terms and Conditions</a>
@@ -199,6 +202,7 @@
             }
         </script>
         <script src="../js/animations.js"></script>
+        <script src="../js/loader.js"></script>
 </body>
 
 </html>

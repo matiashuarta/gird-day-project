@@ -15,7 +15,7 @@
     <title>Green Day | About</title>
 </head>
 
-<body>
+<body id="body" onload="myFunction()">
     <div class="gridPadreAbout">
         <nav class="nav">
             <input type="checkbox" id="check">
@@ -53,7 +53,10 @@
                 </nav>
             </div>
         </header>
-        <section class="about fib">
+        <div class="divloader">
+            <div id="loader"></div>
+        </div>
+        <section style="display:none;" class="animate-bottom about fib">
             <div>
                 <h1>The Band Members</h1>
                 <p>Green Day is an American rock band formed in the East Bay of California in 1987 by lead vocalist and
@@ -70,7 +73,7 @@
                     mainstream interest in punk rock in the U.S.</p>
             </div>
         </section>
-        <section class="billie aboutMembers fir">
+        <section style="display:none;" class="animate-bottom billie aboutMembers fir">
             <div>
                 <img src="../img/billiejoearmstrong.jpg" alt="Billie Joe Armstrong">
             </div>
@@ -85,7 +88,7 @@
                     of the greatest punk rock guitarists of all time.</p>
             </div>
         </section>
-        <section class="mike aboutMembers fit">
+        <section style="display:none;" class="animate-bottom mike aboutMembers fit">
             <div>
                 <img src="../img/mikedirnt.jpg" alt="Mike Dirnt">
             </div>
@@ -100,7 +103,7 @@
                     strings.</p>
             </div>
         </section>
-        <section class="tre aboutMembers fil">
+        <section style="display:none;" class="animate-bottom tre aboutMembers fil">
             <div>
                 <img src="../img/trecool.jpg" alt="Tre Cool">
             </div>
@@ -114,7 +117,7 @@
                     and the Brood and the Green Day side projects The Network and the Foxboro Hot Tubs.</p>
             </div>
         </section>
-        <footer class="footer">
+        <footer id="footer" style="display:none;" class="animate-bottom footer">
             <div class="footer__divfooter">
                 <div>
                     <a href="./terms.html">Terms and Conditions</a>
@@ -143,6 +146,7 @@
                 window.scrollTo(0, 0);
             }
         </script>
+        <script src="../js/loader.js"></script>
 </body>
 
 </html>
