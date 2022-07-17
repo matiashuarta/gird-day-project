@@ -593,7 +593,7 @@ h3 {
     display: block; }
   .nav__menu {
     position: fixed;
-    top: 74px;
+    top: 85px;
     bottom: 0;
     flex-direction: column;
     width: 100vw;
